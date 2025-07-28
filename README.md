@@ -13,6 +13,15 @@ A Python-based recon tool for bug bounty hunters and pentesters. Features:
 - Subdomain enumeration
 - Nuclei integration
 
+# Core Requirements
+requests==2.31.0
+colorama==0.4.6
+dnspython==2.4.2
+pyOpenSSL==23.3.0
+
+# Linux-Specific Tools (Must be installed via apt)
+# sudo apt install -y subfinder httpx nuclei waybackurls wafw00f shodan jq ffuf
+
 ## Installation
 ```bash
 git clone https://github.com/your-username/gryscr.git
