@@ -42,14 +42,11 @@ pip install shodan
 shodan init YOUR_API_KEY
 
 Warning
-This tool requires Linux (tested on Parrot OS due to:
+This tool requires Linux (Coded on Parrot OS)
 
 Dependency on Linux-native tools (subfinder, nuclei)
 
 POSIX-compliant shell commands
-
-WAF bypass techniques relying on Linux path structures
-
 
 ---
 
@@ -75,4 +72,4 @@ if __name__ == "__main__":
 git clone https://github.com/your-username/gryscr.git
 pip install -r requirements.txt
 
-python3 gryscr.py -u example.com
+python3 recon.py -u example.com
