@@ -22,6 +22,25 @@ pyOpenSSL==23.3.0
 # Linux-Specific Tools (Must be installed via apt)
 # sudo apt install -y subfinder httpx nuclei waybackurls wafw00f shodan jq ffuf
 
+## 🐧 Linux-Specific Installation
+
+```bash
+
+# 1. Install Linux tools (Debian/Ubuntu)
+sudo apt update && sudo apt install -y \
+    subfinder \
+    httpx \
+    nuclei \
+    waybackurls \
+    wafw00f \
+    shodan \
+    jq \
+    ffuf
+
+# 2. Install Shodan CLI (if needed)
+pip install shodan
+shodan init YOUR_API_KEY
+
 ## Installation
 ```bash
 git clone https://github.com/your-username/gryscr.git
