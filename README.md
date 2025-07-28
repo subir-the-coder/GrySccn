@@ -62,13 +62,13 @@ import sys
 
 def check_linux():
     if platform.system() != "Linux":
-        print(f"{Fore.RED}[!] This tool requires Linux. Detected: {platform.system()}{Style.RESET_ALL}")
-        print(f"{Fore.YELLOW}[!] Use WSL2 or a Parrot Os VM for Windows/Mac{Style.RESET_ALL}")
+        print(f"{Fore.RED}[!] This tool requires Linux (Parrot OS/ Kali )
+        print(f"{Fore.YELLOW}[!] Use Parrot Os VM for Windows/Mac{Style.RESET_ALL}")
         sys.exit(1)
 
 if __name__ == "__main__":
-    check_linux()  # Add this before main()
-    # ... rest of your code ...
+    check_linux()  # Add this beore main to check()
+    # ... if yes, code goes here ...
 
 ## Installation
 ```bash
