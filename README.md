@@ -41,6 +41,35 @@ sudo apt update && sudo apt install -y \
 pip install shodan
 shodan init YOUR_API_KEY
 
+Warning
+This tool requires Linux (tested on Parrot OS due to:
+
+Dependency on Linux-native tools (subfinder, nuclei)
+
+POSIX-compliant shell commands
+
+WAF bypass techniques relying on Linux path structures
+
+
+---
+
+### Modify Code for Linux Validation**
+Add this check at the start of your script (`gryscr.py`):
+
+```python
+import platform
+import sys
+
+def check_linux():
+    if platform.system() != "Linux":
+        print(f"{Fore.RED}[!] This tool requires Linux. Detected: {platform.system()}{Style.RESET_ALL}")
+        print(f"{Fore.YELLOW}[!] Use WSL2 or a Parrot Os VM for Windows/Mac{Style.RESET_ALL}")
+        sys.exit(1)
+
+if __name__ == "__main__":
+    check_linux()  # Add this before main()
+    # ... rest of your code ...
+
 ## Installation
 ```bash
 git clone https://github.com/your-username/gryscr.git
