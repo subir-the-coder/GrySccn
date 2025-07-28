@@ -1,6 +1,7 @@
 # GryScan
 
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/49b1e90e-ea6a-4495-8def-7787d6e90237" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/b02638b0-d02b-48e2-8d14-bc7672f5ec4d" />
+
 
 Advanced Reconnaissance Suite with WAF Bypass
 # Gryscr - Advanced Reconnaissance Suite
