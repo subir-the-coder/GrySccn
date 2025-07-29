@@ -68,8 +68,6 @@ if __name__ == "__main__":
     # ... if yes, code goes here ...
 
 ## Installation
-```bash
-git clone https://github.com/your-username/gryscr.git
-pip install -r requirements.txt
+git clone https://github.com/subir-the-coder/gryscr.git
 
 python3 recon.py -u example.com
